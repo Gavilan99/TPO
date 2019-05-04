@@ -1,37 +1,42 @@
-package metodos;
+package implementaciones;
 
 import api.Pila_TDA;
 
 public class PilaTF implements Pila_TDA {
+	
+	int [] a;
+	int indice;
 
 	@Override
 	public void InicializarPila() {
-		// TODO Auto-generated method stub
+		a= new int[100] ;
+		indice = 0 ;
 
 	}
 
 	@Override
 	public void Apilar(int x) {
-		// TODO Auto-generated method stub
+		a[indice] = x;
+		indice ++;
 
 	}
 
 	@Override
 	public void Desapilar() {
-		// TODO Auto-generated method stub
+		indice--;
 
 	}
 
 	@Override
 	public boolean PilaVacia() {
-		// TODO Auto-generated method stub
-		return false;
+		
+		return (indice == 0);
 	}
 
 	@Override
 	public int Tope() {
-		// TODO Auto-generated method stub
-		return 0;
+
+		return (a[indice-1]);
 	}
 
 }

@@ -12,14 +12,14 @@ public class TP1 {
 		po.Apilar(1);
 		po.Apilar(2);
 		po.Apilar(3);
-		Metodos. MostrarPila(po);
 		PilaTF pd=new PilaTF();
 		pd.InicializarPila();
+		Metodos. MostrarPila(po);
+		//a) pasar una pila a otra
 		Metodos.PasarPila(po, pd);
 		PilaTF aux=new PilaTF();
 		aux.InicializarPila();
-		Metodos.CopiarPila(pd, aux);
-		//Metodos. MostrarPila(pd);
+		Metodos. MostrarPila(pd);
 		
 	}
 

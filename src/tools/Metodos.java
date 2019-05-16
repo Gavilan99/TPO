@@ -32,6 +32,7 @@ public static void CopiarPila(PilaTDA o, PilaTDA d){
 		
 }
 
+
 public static void MostrarPila(PilaTDA o){
 	
 		PilaTDA aux= new PilaTF();
@@ -45,10 +46,38 @@ public static void MostrarPila(PilaTDA o){
 	
 
 	
+public static void invertirContenidoPila(PilaTDA o) {
+	int a[]=new int[20];
+	int i=0;
+	while(!o.PilaVacia()) {
+		a[i]=o.Tope();
+		i++;
+		o.Desapilar();
+	}
 	
-	
-	
-		
+	for(int j=0;j<i;j++) {
+		o.Apilar(a[j]);
+	}
+}
+
+public static  int contarElementosPila(PilaTDA o) {
+	return o.Tope();
+}
+
+public static int sumarElemPila(PilaTDA o) {
+	int element=0;
+	PilaTDA aux= new PilaTF();
+	CopiarPila(o,aux);
+	while (!aux.PilaVacia()) {
+		element += aux.Tope();
+		aux.Desapilar();
+	}
+	return element;
+}
+
+public static int promElemPila(PilaTDA o) {
+	return (sumarElemPila(o)/contarElementosPila(o));
+}
 }
 	
 	

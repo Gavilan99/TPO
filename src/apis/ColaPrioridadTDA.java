@@ -7,7 +7,7 @@ public interface ColaPrioridadTDA {
 	//siempre que la cola este inicializada y no este vacia
 	void desacolar();
 	//siempre que la cola este inicializada y no este vacia
-	void primero();
+	int primero();
 	//siempre que la cola este inicializada
 	boolean colaVacia();
 	//siempre que la cola esté inicializada y no esté vacia

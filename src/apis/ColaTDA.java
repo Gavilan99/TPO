@@ -5,5 +5,5 @@ public interface ColaTDA {
 	public void Acolar( int x);
 	public void Desacolar();
 	public boolean ColaVacia();
-	boolean Primero();
+	public int Primero();
 }

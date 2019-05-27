@@ -39,9 +39,9 @@ public class ColaCD implements ColaTDA{
 	}
 
 	@Override
-	public boolean Primero() {
+	public int Primero() {
 		// TODO Auto-generated method stub
-		return false;
+		return 0;
 	}
 
 }
